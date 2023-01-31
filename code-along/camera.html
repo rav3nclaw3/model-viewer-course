@@ -24,7 +24,31 @@
 
 </head>
 
+<style>
+
+model-viewer{
+  width: 2000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+
+</style>
+
 <body>
-  
+   <!-- Import the component -->
+
+ <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+ <!-- Use it like any other HTML element -->
+
+ <model-viewer src="../assets/steampunk_camera.glb" camera-controls
+               alt="A 3D model of a steampunk_camera"
+               skybox-image="../assets/hdr/apartment.hdr"
+               ar-modes="webxr scene-viewer quick-look"
+               ar-placement="wall"
+               autoplay
+ ></model-viewer>
+
 </body>
-</html>
+</html> 
